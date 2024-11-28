@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family:system-ui;
+    background-color: #232323;
+    color: white;
+}
+h1{
+    margin-bottom: 40px;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    :hover{
+        background-color: #ddd;
+    } 
+    button{
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        :disabled{
+            background-color: #ccc;
+            cursor:not-allowed;
+        }  
+    }
+}
+#result{
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+#score{
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
